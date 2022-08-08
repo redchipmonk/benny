@@ -23,22 +23,17 @@
                         <li>going on walks</li>
                     </ol>
             </div>
-            <div>
+
             <p>Tell me more about your own dog!</p>
-            <form>
-                <input type="text" placeholder="name" id="name" name="name" required><br>
-                <div><br>
-                    <label for="indoor"><input id="indoor" type="radio"  name="indoor-outdoor" value="indoor" checked> Indoor</label><br>
-                    <label for="outdoor"><input id="outdoor" type="radio"  name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
-                </div>
-                <div><br>
-                    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label><br>
-                    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label><br>
-                    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
-                </div><br>
+            <form action="./pages/results.html" method="GET">
+                <input type="text" placeholder="name" name="name" required><br><br>
+                    <label for="indoor"><input type="radio" id="indoor" name="indoor-outdoor" checked> Indoor</label><br>
+                    <label for="outdoor"><input type="radio" id="outdoor" name="indoor-outdoor"> Outdoor</label><br><br>
+                    <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label><br>
+                    <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label><br>
+                    <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
                 <button type="submit">Submit</button>
             </form>
-            </div>
         </main>
     </body>
 </html>

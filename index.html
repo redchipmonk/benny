@@ -5,26 +5,41 @@
         <title>Benny's Fanpage</title>
     </head>
     <body>
-        <h2>Benny's Fanpage</h2>
+        <h1>Benny's Page</h1>
         <main>
+        <section>
+        <h2>Benny's Photos</h2>
             <p>Click <a href="./pages/images.html" target="_blank">here</a> for more photos of Benny.</p>
             <img src="./images/benny1.jpg" alt="Benny sitting">
+        </section>
+        <section>
+            <h2>Lists</h2>
             <div>
-                    <p>Things Benny loves:</p>
+                    <h3>Things Benny loves:</h3>
                     <ul>
-                        <li>human food</li>
                         <li>licking</li>
-                        <li>peeing on floor</li>
+                        <li>peeing on the floor</li>
+                        <li>human food</li>
                     </ul>
-                    <p>Top 3 things Benny hates</p>
+                    <figure>
+                        <img src="./images/burger.jpeg" alt="A burger">
+                        <figcaption>He <strong>loves</strong> burgers!</figcaption>
+                    </figure>
+                    <h3>Top 3 things Benny hates</h3>
                     <ol>
                         <li>strangers</li>
                         <li>the doorbell</li>
                         <li>going on walks</li>
                     </ol>
+                    <figure>
+                        <img src="./images/dogwalking.jpg" alt="Dog walking">
+                        <figcaption>He <em>hates</em> going on walks.</figcaption>
+                    </figure>
             </div>
-
-            <p>Tell me more about your own dog!</p>
+            </section>
+            <section>
+            <h2>Dog Form</h2>
+            <h3>Tell me more about your own dog!</h3>
             <form action="./pages/results.html" method="GET">
                 <input type="text" placeholder="name" name="name" required><br><br>
                     <label for="indoor"><input type="radio" id="indoor" name="indoor-outdoor" checked> Indoor</label><br>
@@ -34,6 +49,7 @@
                     <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br><br>
                 <button type="submit">Submit</button>
             </form>
+            </section>
         </main>
     </body>
 </html>
